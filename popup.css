@@ -10,3 +10,28 @@ li {
   margin-right: 10px;
   white-space: nowrap;
 }
+
+th {
+  font-size: 24px;
+  color:aliceblue;
+  padding: 10px;
+  background-color: rgb(35, 52, 104);
+  font-family: 'Sigmar', cursive;
+  letter-spacing: 1px;
+  border-radius: 10px;
+}
+
+td {
+  padding: 10px;
+  background-color: rgb(207, 218, 248) ;
+  border: 1px solid rgb(185, 194, 220) ;
+  border-radius: 10px;
+  width: 50%;
+  font-family: 'Poppins', sans-serif;
+}
+
+table {
+  border-collapse: separate;
+  border-spacing: 5px 5px;
+}
+

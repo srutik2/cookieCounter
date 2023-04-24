@@ -1,17 +1,38 @@
 <!DOCTYPE html>
 <html>
   <head>
+    <link rel="stylesheet" href="popup.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Sigmar&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  </head>
+  <head>
     <title>Cookie Checker</title>
     <script src="popup.js"></script>
   </head>
   <body>
-    <h1>Total Cookies:</h1>
-    <p id="total-cookie-count"></p>
-    <h1>Cookies from this domain:</h1>
-    <p id="domain-cookie-count"></p>
-    <h1>"Strict" cookies from this domain:</h1>
-    <p id="strict-cookie-from-domain"></p>
-    <h1>New cookies created during this session:</h1>
-    <p id="new-cookies-in-session"></p>
+    <table style="width:500px">
+      <tr>
+        <th colspan="100%">Cookie Counter</th>
+      </tr>
+      <tr>
+        <td>
+          Total Cookies on this browser: <span id="total_cookie_count"></span>
+        </td>
+        <td>
+          New cookies this session: <span id="new_cookies_in_session"></span>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          Cookies from this domain: <span id="domain_cookie_count"></span>
+        </td>
+        <td>
+          "Strict" cookies from this domain: <span id="strict_cookie_from_domain"></span>
+        </td>
+      </tr>
+    </table>
   </body>
 </html>
