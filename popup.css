@@ -1,21 +1,20 @@
-ul {
-  list-style: none;
-  margin: 0;
-  padding: 0;
-  display: flex;
-  flex-wrap: wrap;
+:root {
+  /* Color Definitions */
+  --header-text: aliceblue;
+  --header-bg: rgb(35, 52, 104);
+  --text-bg: rgb(185, 194, 220);
+  --text-border: rgb(185, 194, 220);
 }
 
-li {
-  margin-right: 10px;
-  white-space: nowrap;
+body {
+  background-color: var(--header-text);
 }
 
 th {
   font-size: 24px;
-  color:aliceblue;
+  color: var(--header-text);
   padding: 10px;
-  background-color: rgb(35, 52, 104);
+  background-color: var(--header-bg);
   font-family: 'Sigmar', cursive;
   letter-spacing: 1px;
   border-radius: 10px;
@@ -23,8 +22,8 @@ th {
 
 td {
   padding: 10px;
-  background-color: rgb(207, 218, 248) ;
-  border: 1px solid rgb(185, 194, 220) ;
+  background-color: var(--text-bg);
+  border: 1px solid var(--text-border);
   border-radius: 10px;
   width: 50%;
   font-family: 'Poppins', sans-serif;
@@ -35,6 +34,13 @@ table {
   border-spacing: 5px 5px;
 }
 
-table svg path {
-  color: green;
+svg {
+  fill: var(--header-text);
+  position: relative;
+  top: 6px;
+  left  : 100px;
+}
+
+svg:hover {
+  fill: var(--text-bg);
 }
