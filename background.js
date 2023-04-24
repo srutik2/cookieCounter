@@ -1,5 +1,3 @@
-
-
 // helper function to increment a storage.local variable with a given key
 function incrementStorage(key) {
   chrome.storage.session.get([key], function (result) {
@@ -20,7 +18,7 @@ chrome.cookies.onChanged.addListener(function (changeInfo) {
       let dom = changeInfo.cookie.domain.split('.').slice(-2).join('.');
 
       if (host != dom) {
-        incrementStorage('thirdPartyCookies');
+        incrementStorage('newCookies');
       }
 
     });
