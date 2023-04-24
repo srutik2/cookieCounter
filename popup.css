@@ -35,3 +35,6 @@ table {
   border-spacing: 5px 5px;
 }
 
+table svg path {
+  color: green;
+}
