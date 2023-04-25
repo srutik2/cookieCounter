@@ -46,7 +46,7 @@ svg:hover {
 }
 
 .info-box {
-  border: 1px solid black;
+  border: 1px solid var(--text-bg);
   border-radius: 10px;
   background: var(--header-text);
   padding: 1rem;
