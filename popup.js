@@ -1,4 +1,12 @@
 document.addEventListener('DOMContentLoaded', function () {
+  document.getElementById('info_icon').addEventListener('click', () => {
+    infoBoxes = document.getElementsByClassName('info-box')
+    for (let box of infoBoxes) {
+      // box.style.display = 'block';
+      box.classList.toggle('hidden');
+    }
+  });
+
   // return count of chrome.cookies.getAll()
   chrome.cookies.getAll({ }, (cookies) => { 
     let totalCookies = cookies.length;
@@ -22,7 +30,6 @@ document.addEventListener('DOMContentLoaded', function () {
     chrome.cookies.getAll({ url: currentProtocol + "//" + currentHostname}, (cookies) => {
       let strictCookieCount = document.getElementById("strict_cookie_from_domain");
       // find count of cookies where sameSite is 'strict'
-
       strictCookieCount.textContent = cookies.filter((cookie) => cookie.sameSite == 'strict').length.toString();
     });
 

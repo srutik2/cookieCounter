@@ -3,6 +3,7 @@
   "name": "Cookie Viewer",
   "version": "1.0",
   "action": {
+    "default_icon": "cookie_counter_icon.png",
     "default_popup": "popup.html"
   },
   "permissions": ["activeTab", "cookies", "storage"],

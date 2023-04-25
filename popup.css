@@ -44,3 +44,19 @@ svg {
 svg:hover {
   fill: var(--text-bg);
 }
+
+.info-box {
+  border: 1px solid black;
+  border-radius: 10px;
+  background: var(--header-text);
+  padding: 1rem;
+  margin-top: .5rem;
+}
+
+.hidden {
+  display: none;
+}
+
+p {
+  margin: 0;
+}

@@ -9,7 +9,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
   </head>
   <head>
-    <title>Cookie Checker</title>
+    <title>Cookie Counter</title>
     <script src="popup.js"></script>
   </head>
   <body>
@@ -17,7 +17,7 @@
       <tr>
         <th colspan="100%" id="table_header">
           Cookie Counter
-          <svg id="info_icon" width="30" height="30" viewBox="0 0 512 512" onclick="displayInfo()">
+          <svg id="info_icon" width="30" height="30" viewBox="0 0 512 512">
             <path d="M256 512A256 256 0 1 0 256 0a256 256 0 1 0 0 512zM216 336h24V272H216c-13.3 0-24-10.7-24-24s10.7-24 24-24h48c13.3 0 24 10.7 24 24v88h8c13.3 0 24 10.7 24 24s-10.7 24-24 24H216c-13.3 0-24-10.7-24-24s10.7-24 24-24zm40-208a32 32 0 1 1 0 64 32 32 0 1 1 0-64z"/>
           </svg>
         </th>
@@ -25,17 +25,29 @@
       <tr>
         <td>
           Total Cookies on this browser: <span id="total_cookie_count"></span>
+          <div class="info-box hidden">
+            <p>This is the total number of cookies on this browser from all time.</p>
+          </div>
         </td>
         <td>
           New cookies this session: <span id="new_cookies_in_session"></span>
+          <div class="info-box hidden">
+            <p>This is the total number of new cookies created since this window has been opened.</p>
+          </div>
         </td>
       </tr>
       <tr>
         <td>
           Cookies from this domain: <span id="domain_cookie_count"></span>
+          <div class="info-box hidden">
+            <p>This is the total number of cookies that come from this website.</p>
+          </div>
         </td>
         <td>
           "Strict" cookies from this domain: <span id="strict_cookie_from_domain"></span>
+          <div class="info-box hidden">
+            <p>This is the total number of cookies from this website that can only collect data from this website.</p>
+          </div>
         </td>
       </tr>
     </table>
